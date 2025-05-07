@@ -1,12 +1,55 @@
-# React + Vite
+# React Router Demo Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates React routing implementation using React Router DOM and Vite. It showcases various routing features and page navigation in a React application.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Multi-page navigation using React Router
+- Layout with persistent header and footer
+- Multiple route components including:
+  - Home page
+  - About page
+  - Contact page
+  - GitHub integration
+  - User profile page
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+  ├── components/
+  │   ├── About/
+  │   ├── Contact/
+  │   ├── Footer/
+  │   ├── Github/
+  │   ├── Header/
+  │   └── Home/
+  ├── User/
+  ├── Layout.jsx
+  ├── App.jsx
+  └── main.jsx
+```
+
+## Technology Stack
+
+- React 19
+- Vite 6
+- TailwindCSS 4
+- React Router DOM
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser to the URL shown in the terminal
+
+## Development
+
+The project uses Vite for fast development with HMR (Hot Module Replacement) and ESLint for code quality. The routing structure is component-based, making it easy to add new routes and pages.
